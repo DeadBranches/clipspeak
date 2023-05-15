@@ -22,8 +22,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+
+  <a href="https://github.com/DeadBranches/clipspeak">
+    <img src="[images/logo.png](https://github.com/DeadBranches/clipspeak/assets/56521874/388692cf-12a9-4b5a-8aa1-51a23ffee833)" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">clipspeak</h3>
