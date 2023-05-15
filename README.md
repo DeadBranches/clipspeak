@@ -26,10 +26,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">clipspeak</h3>
 
   <p align="center">
-    project_description
+    clipspeak is a Python project that synthesizes and speaks text from the clipboard using Azure Cognitive Services.
   </p>
 </div>
 
@@ -75,29 +75,45 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+
+To install clipspeak, you need to have Python 3.6 or higher and pip installed on your system. You also need to have an Azure subscription and a Speech service resource. You can create one [here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/get-started).
   
 ### Installation
 
 _Instruction on setup and install._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+To install clipspeak from source, clone this repository and run the following command from the root folder:
+
+```bash
+pip install .
+```
+
+To use clipspeak, you need to create a config file that contains your Azure key and service region. You can also specify different speech configuration sets with different voice names and other options. For example, your config file could look something like this:
+
+```ini
+[Azure]
+; The default azure key and service region
+key = <default_key>
+service_region = <default_region>
+
+[Aria]
+; The azure key and service region for aria voice
+key = <aria_key>
+service_region = <aria_region>
+; The voice name and pitch for aria voice
+voice_name = en-US-AriaNeural
+voice_pitch = 0
+
+[Grace]
+; The azure key and service region for grace voice
+key = <grace_key>
+service_region = <grace_region>
+; The voice name and pitch for grace voice
+voice_name = en-US-GraceNeural
+voice_pitch = 0
+```
+
+You need to save this config file in a folder named `.config` in your home directory and name it `clipspeak.ini`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,7 +122,10 @@ _Instruction on setup and install._
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To run clipspeak, you can use the `clipspeak` command with an optional argument that specifies the speech configuration set to use. For example, to use the aria configuration set, you can run:
+
+```bash
+clipspeak -c aria
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
