@@ -22,10 +22,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-
-  <a href="https://github.com/DeadBranches/clipspeak">![00169-4258613391](https://github.com/DeadBranches/clipspeak/assets/56521874/a6711ed6-ec4e-48fd-89bd-e8d6d50fbc8c)
-
-    <img src="[images/logo.png](https://github.com/DeadBranches/clipspeak/assets/56521874/388692cf-12a9-4b5a-8aa1-51a23ffee833)" alt="Logo" width="80" height="80">
+  <a href="https://github.com/DeadBranches/clipspeak">
+    <img src="https://github.com/DeadBranches/clipspeak/assets/56521874/d96fa92c-4c0e-48bd-b908-fd8e9e799678" alt="Logo" width="220" height="220">
   </a>
 
 <h3 align="center">clipspeak</h3>
