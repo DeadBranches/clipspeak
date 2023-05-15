@@ -1,0 +1,1 @@
+from . import test_clipboard, test_speech
