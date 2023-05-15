@@ -126,7 +126,7 @@ To run clipspeak, you can use the `clipspeak` command with an optional argument 
 
 ```bash
 clipspeak -c aria
-
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
